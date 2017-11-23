@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+	<node pkg="human_motion" type="data_viz.py" name="data_viz" output="screen"/>
+
+	<node pkg="rviz" type="rviz" name="visualization_rviz"
+		args="-d $(find human_motion)/rviz_cfg/dataViz.rviz"/>
+</launch>
